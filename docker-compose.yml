@@ -5,5 +5,9 @@ services:
     build: .
     ports: 
     - "5000:5000"
+    environment: 
+    - LETSENCRYPT_HOST=py.marcwitney.com
+    - VIRTUAL_HOST=py.marcwitney.com
+    - LETSENCRYPT_EMAIL=marcwitney@live.com
   redis:
     image: "redis:alpine"
