@@ -9,6 +9,7 @@ services:
     - LETSENCRYPT_HOST=py.marcwitney.com
     - VIRTUAL_HOST=py.marcwitney.com
     - LETSENCRYPT_EMAIL=marcwitney@live.com
+    - VIRTUAL_PORT=5000
   redis:
     image: "redis:alpine"
 
