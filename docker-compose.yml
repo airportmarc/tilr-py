@@ -11,3 +11,8 @@ services:
     - LETSENCRYPT_EMAIL=marcwitney@live.com
   redis:
     image: "redis:alpine"
+
+networks:  
+  default:
+    external:
+      name: nginx-net
