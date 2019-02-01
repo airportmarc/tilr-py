@@ -55,6 +55,6 @@ jobs:
       #     destination: test-reports
       - deploy:
           name: digital-ocean
-          command: ssh  -o StrictHostKeyChecking=no marc@159.203.42.163 '/home/marc/deploy.sh node'
+          command: ssh  -o StrictHostKeyChecking=no marc@159.203.42.163 '/home/marc/deploy.sh py'
       # - deploy:
           
