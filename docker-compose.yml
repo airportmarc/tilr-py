@@ -5,6 +5,8 @@ services:
     build: .
     ports: 
     - "5000:5000"
+    volumes: 
+    - ./:/app
     environment: 
     - LETSENCRYPT_HOST=py.marcwitney.com
     - VIRTUAL_HOST=py.marcwitney.com
@@ -16,4 +18,4 @@ services:
 networks:
   default:
     external:
-      name: monitoring_logging
+      name: nginx-proxy
